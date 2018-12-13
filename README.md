@@ -1,2 +1,0 @@
-# first-app-demo
-springboot
