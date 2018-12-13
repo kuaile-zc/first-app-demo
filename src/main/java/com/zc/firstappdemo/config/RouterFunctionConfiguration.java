@@ -34,8 +34,9 @@ public class RouterFunctionConfiguration {
     public RouterFunction<ServerResponse> personFindAll(UserRepository userRepository){
         Collection<User> users= userRepository.findAll();
 
-        RouterFunctions.route(RequestPredicates.GET("/person/find/all"),
+//        RouterFunctions.route(RequestPredicates.GET("/person/find/all"),
 
-                );
+//                );
+        return null;
     }
 }

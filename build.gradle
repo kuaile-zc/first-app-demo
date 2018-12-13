@@ -6,8 +6,8 @@ version = '0.0.1-SNAPSHOT'
 
 description = """first-app-demo"""
 
-sourceCompatibility = 1.5
-targetCompatibility = 1.5
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 tasks.withType(JavaCompile) {
 	options.encoding = 'UTF-8'
 }
@@ -19,6 +19,8 @@ repositories {
      maven { url "http://repo.maven.apache.org/maven2" }
 }
 dependencies {
+
+    
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-webflux', version:'2.1.1.RELEASE'
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:'2.1.1.RELEASE'
     testCompile group: 'io.projectreactor', name: 'reactor-test', version:'3.2.3.RELEASE'
